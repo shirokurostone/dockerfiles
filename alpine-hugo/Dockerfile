@@ -13,6 +13,6 @@ RUN apk add --no-cache git tzdata && \
     cd / && rm -r /work && \
     adduser -h /app -s /bin/sh -u 1000 -S app
 
-USER app
+# USER app
 WORKDIR /app
 
