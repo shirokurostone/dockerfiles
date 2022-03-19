@@ -1,8 +1,8 @@
 FROM ubuntu:20.04
 
-# https://github.com/gohugoio/hugo/releases/tag/v0.91.2
-ENV HUGO_URL='https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_extended_0.91.2_Linux-64bit.deb' \
-    HUGO_CHECKSUM='a7480201ec1e32f7fc0c0346234fa8f80cea9b9945a33809e984addd1ef322fb'
+# https://github.com/gohugoio/hugo/releases/tag/v0.94.2
+ENV HUGO_URL='https://github.com/gohugoio/hugo/releases/download/v0.94.2/hugo_extended_0.94.2_Linux-64bit.deb' \
+    HUGO_CHECKSUM='88b7fa12eb843d6fc08e94b2bb0e47902843a803b52286bb7b74b2121b892fb2'
 
 RUN cd /root && \
     apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y curl git tzdata && \
